@@ -83,6 +83,70 @@
       .contact{grid-template-columns:1fr}
       .footer-grid{grid-template-columns:1fr}
     }
+    @media (max-width: 1023px) {
+  header {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  .hero {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+  .heroImg {
+    width: 400px;
+  }
+  .name,
+  .title {
+    font-size: 2rem;
+  }
+  .arrow {
+    display: none;
+  }
+  .aboutMe {
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 2rem;
+  }
+  .textContainer {
+    align-items: center;
+    margin: 0rem 5rem;
+    gap: 1rem;
+  }
+  .aboutName,
+  .aboutTitle {
+    font-size: 2rem;
+  }
+  .light {
+    width: 60px;
+  }
+  .aboutMeImg {
+    width: 400px;
+  }
+  .works {
+    padding: 0;
+  }
+  .worksContainer {
+    padding: 5rem 0rem;
+    gap: 3rem;
+  }
+  .projectTitle {
+    margin-left: 1rem;
+  }
+  .works ul {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .contactContainer {
+    margin: 10rem 5rem;
+    gap: 2rem;
+  }
+  .contact {
+    flex-direction: column;
+    gap: 1rem;
+    margin-right: 0;
+  }
+}
   </style>
 </head>
 <body>
@@ -128,7 +192,7 @@
         <div class="card">
           <span class="tag">حضوري & أونلاين</span>
           <h3>مرونة بالحضور</h3>
-          <p class="muted">داخل حي أشبيليا حضوريًا، أو عبر الإنترنت لكل مناطق المملكة.</p>
+          <p class="muted">داخل حي أشبيليا حضوريًا، أو عبر الإنترنت بروح الاماكن المجاورة.</p>
         </div>
       </div>
     </div><div class="hero-card">
@@ -208,9 +272,9 @@
       </div>
       <div class="price" style="outline:2px solid rgba(34,197,94,.25)">
         <div class="tag">الأكثر طلبًا</div>
-        <div class="amount">120 ر.س / الحصة</div>
+        <div class="amount">حسب ر.س / الحصة</div>
         <ul class="muted">
-          <li>⏱️ 60 دقيقة</li>
+          
           <li>📚 عربي أو رياضيات</li>
           <li>🧠 واجبات وتمارين منزلية</li>
         </ul>
@@ -220,9 +284,9 @@
       </div>
       <div class="price">
         <div class="tag">باقة شهرية</div>
-        <div class="amount">800 ر.س</div>
+        <div class="amount">حسب ر.س</div>
         <ul class="muted">
-          <li>✨ 8 حصص × 60 دقيقة</li>
+        
           <li>📈 تقرير تقدّم شهري</li>
           <li>📞 متابعة سريعة عبر واتساب</li>
         </ul>
@@ -255,6 +319,7 @@
     <ul class="mini" style="list-style:none;padding:0;margin:0;display:grid;gap:8px">
       <li>📍 الرياض – حي أشبيليا</li>
       <li>📞 <a href="tel:0575831079">0575831079</a></li>
+      <a href="tel:01004243935" class="inline-flex items-center gap-2 bg-white text-[var(--brand)] px-6 py-3 rounded-2xl font-bold shadow hover:translate-y-0.5 transition">اتصل الآن 📞</a>
       <li>💬 <a href="https://wa.me/0575831079" target="_blank" rel="noopener">واتساب مباشر</a></li>
       <li>✉️ <a href="mailto:teacher@example.com"></a></li>
       <li>🕒 الأوقات: 4 مساءً – 9 مساءً (السبت إلى الخميس)</li>
