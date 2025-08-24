@@ -1,0 +1,280 @@
+<!DOCTYPE html><html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>مدرسة لغة عربية & رياضيات</title>
+  <meta name="description" content="مُدرّسة خاصة في اللغة العربية والرياضيات في الرياض – حي أشبيليا. دروس تأسيس وتقوية ومتابعة واجبات وحصص أونلاين وحضوري." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0f172a;            /* slate-900 */
+      --card:#111827;          /* gray-900 */
+      --muted:#94a3b8;         /* slate-400 */
+      --text:#e5e7eb;          /* gray-200 */
+      --brand:#22c55e;         /* green-500 */
+      --brand-2:#06b6d4;       /* cyan-500 */
+      --ring: 0 0 0 3px rgba(34,197,94,.35);
+      --radius: 18px;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;height:100%;scroll-behavior:smooth}
+    body{font-family:'Cairo',system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial; background: radial-gradient(1200px 600px at 80% -10%, rgba(34,197,94,.15), transparent 60%), radial-gradient(900px 500px at -10% 20%, rgba(6,182,212,.15), transparent 60%), var(--bg); color:var(--text)}
+    a{color:inherit;text-decoration:none}
+    img{max-width:100%;display:block}
+    .container{width:100%;max-width:1100px;margin-inline:auto;padding-inline:20px}
+    /* Header */
+    header{position:sticky;top:0;z-index:50;background:rgba(15,23,42,.7);backdrop-filter: blur(10px);border-bottom:1px solid rgba(255,255,255,.06)}
+    .nav{display:flex;align-items:center;justify-content:space-between;height:68px}
+    .logo{display:flex;gap:12px;align-items:center;font-weight:800;letter-spacing:.4px}
+    .logo-badge{width:38px;height:38px;border-radius:12px;background:linear-gradient(135deg,var(--brand),var(--brand-2));display:grid;place-items:center;font-weight:800;color:#083344}
+    .nav a{opacity:.9}
+    .nav-links{display:flex;gap:18px}
+    .btn{display:inline-flex;align-items:center;gap:10px;border:none;border-radius:999px;padding:12px 18px;font-weight:700;cursor:pointer;transition:.2s transform,.2s opacity}
+    .btn:hover{transform:translateY(-1px);opacity:.95}
+    .btn.whatsapp{background:linear-gradient(135deg,#25D366,#128C7E);color:white}
+    .btn.line{background:transparent;border:1px solid rgba(255,255,255,.15);color:var(--text)}
+    /* Hero */
+    .hero{display:grid;grid-template-columns:1.2fr .8fr;align-items:center;gap:32px;padding:56px 0}
+    .pill{display:inline-flex;align-items:center;gap:8px;padding:8px 12px;border:1px solid rgba(255,255,255,.1);border-radius:999px;font-size:14px;color:var(--muted)}
+    h1{font-size:42px;line-height:1.2;margin:14px 0 12px}
+    .lead{color:#cbd5e1;max-width:65ch}
+    .hero-card{background:linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.03));border:1px solid rgba(255,255,255,.08);padding:18px;border-radius:var(--radius);box-shadow:0 10px 30px rgba(0,0,0,.25)}
+    .photo{aspect-ratio:4/5;border-radius:16px;object-fit:cover;border:1px solid rgba(255,255,255,.1)}
+    .hero-cta{display:flex;gap:12px;margin-top:14px;flex-wrap:wrap}
+    /* Cards */
+    .grid{display:grid;gap:16px}
+    .grid.cols-3{grid-template-columns:repeat(3,1fr)}
+    .card{background:linear-gradient(180deg, rgba(255,255,255,.05), rgba(255,255,255,.02));border:1px solid rgba(255,255,255,.08);padding:20px;border-radius:var(--radius);min-height:170px}
+    .card h3{margin:6px 0 8px}
+    .muted{color:var(--muted)}
+    .tag{display:inline-block;background:rgba(34,197,94,.12);border:1px solid rgba(34,197,94,.35);color:#bbf7d0;padding:4px 10px;border-radius:999px;font-size:13px}
+    /* Section spacing */
+    section{padding:38px 0}
+    .section-head{display:flex;align-items:end;justify-content:space-between;margin-bottom:16px}
+    .section-head h2{margin:0}
+    .sub{color:var(--muted)}
+    /* Features */
+    .features .item{display:flex;gap:12px;align-items:flex-start}
+    .features svg{flex:0 0 28px}
+    /* Pricing */
+    .pricing{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    .price{padding:22px;border-radius:var(--radius);border:1px solid rgba(255,255,255,.08);background:linear-gradient(180deg, rgba(255,255,255,.05), rgba(255,255,255,.02))}
+    .price .amount{font-size:32px;font-weight:800;margin:6px 0}
+    .price ul{margin:0;padding:0;list-style:none;display:grid;gap:8px}
+    .price li{display:flex;gap:8px;align-items:center}
+    /* Contact */
+    .contact{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+    .field{display:grid;gap:6px}
+    .input,textarea{background:#0b1220;color:var(--text);border:1px solid rgba(255,255,255,.12);padding:12px 14px;border-radius:12px;outline:none}
+    .input:focus,textarea:focus{box-shadow:var(--ring);border-color:rgba(34,197,94,.55)}
+    textarea{min-height:128px}
+    /* Footer */
+    footer{border-top:1px solid rgba(255,255,255,.08);padding:26px 0;color:var(--muted)}
+    .footer-grid{display:grid;grid-template-columns:2fr 1fr 1.2fr;gap:16px}
+    .mini{font-size:14px}
+    .map{width:100%;height:260px;border:0;border-radius:14px;filter:saturate(1.05) contrast(1.05)}
+    /* Responsive */
+    @media (max-width: 980px){
+      .hero{grid-template-columns:1fr;gap:20px}
+      .pricing{grid-template-columns:1fr}
+      .grid.cols-3{grid-template-columns:1fr}
+      .contact{grid-template-columns:1fr}
+      .footer-grid{grid-template-columns:1fr}
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container nav">
+      <a class="logo" href="#home" aria-label="الصفحة الرئيسية">
+        <span class="logo-badge">أ ر</span>
+        <span>مُدرّسة عربي & رياضيات</span>
+      </a>
+      <nav class="nav-links mini">
+        <a href="#services">الخدمات</a>
+        <a href="#about">نبذة</a>
+        <a href="#pricing">الأسعار</a>
+        <a href="#contact">الحجز والتواصل</a>
+      </nav>
+      <a class="btn whatsapp mini" href="https://wa.me/0575831079" target="_blank" rel="noopener">واتساب</a>
+    </div>
+  </header>  <!-- Hero -->  <main id="home" class="container hero">
+    <div>
+      <span class="pill mini">الرياض • حي أشبيليا</span>
+      <h1>مُدرّسة لغة عربية ورياضيات <span style="background:linear-gradient(90deg,var(--brand),var(--brand-2));-webkit-background-clip:text;background-clip:text;color:transparent">للصفوف الأولية والمتوسطة</span></h1>
+      <p class="lead">تأسيس قوي في القراءة والكتابة والحساب، متابعة واجبات، وتهيئة للاختبارات بمنهج مبسّط وشرح ممتع حضوريًا في أشبيليا أو أونلاين عبر تطبيقات الاتصال.</p>
+      <div class="hero-cta">
+        <a class="btn whatsapp" href="https://wa.me/0575831079?text=السلام عليكم، أود الحجز" target="_blank" rel="noopener">
+          <!-- WhatsApp icon -->
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M20.52 3.48A11.94 11.94 0 0 0 12.01 0C5.4 0 .04 5.35.04 11.95c0 2.1.55 4.16 1.6 5.97L0 24l6.25-1.64a11.9 11.9 0 0 0 5.75 1.47h.01c6.6 0 11.96-5.36 11.96-11.96 0-3.2-1.25-6.21-3.45-8.39ZM12 21.82h-.01a9.85 9.85 0 0 1-5.02-1.37l-.36-.21-3.71.98.99-3.62-.24-.37a9.87 9.87 0 0 1-1.52-5.25C2.13 6.5 6.56 2.1 12 2.1c2.64 0 5.12 1.03 6.98 2.9a9.83 9.83 0 0 1 2.88 6.95c0 5.44-4.43 9.87-9.86 9.87Zm5.41-7.41c-.29-.15-1.71-.84-1.98-.93-.27-.1-.47-.15-.67.15-.2.29-.77.92-.95 1.1-.18.2-.36.22-.66.08-.29-.14-1.23-.45-2.34-1.42-.86-.77-1.43-1.7-1.6-2-.17-.29-.02-.45.13-.6.13-.13.29-.34.44-.51.15-.17.2-.29.29-.49.1-.2.05-.36-.02-.52-.07-.15-.66-1.6-.9-2.2-.24-.58-.48-.5-.66-.5-.17 0-.36-.02-.56-.02-.2 0-.51.08-.77.36-.26.29-1 1-1 2.44 0 1.43 1.03 2.82 1.18 3.02.15.2 2.03 3.1 4.9 4.35.68.29 1.2.46 1.6.6.67.21 1.28.18 1.76.11.54-.08 1.71-.7 1.95-1.37.24-.68.24-1.27.17-1.37-.06-.1-.25-.16-.54-.31Z" fill="currentColor"/></svg>
+          تواصل واتساب
+        </a>
+        <a class="btn line" href="#contact">حجز موعد سريع</a>
+      </div>
+      <div class="grid cols-3" style="margin-top:20px">
+        <div class="card">
+          <span class="tag">تأسيس مبكّر</span>
+          <h3>الصفوف الأولية</h3>
+          <p class="muted">قراءة وكتابة وإملاء وحساب بطرق تفاعلية ممتعة. متابعة</p>
+        </div>
+        <div class="card">
+          <span class="tag">تقوية ومتابعة</span>
+          <h3>ابتدائي – متوسط</h3>
+          <p class="muted">مراجعة المنهج، حل الواجبات والاختبارات التجريبية.</p>
+        </div>
+        <div class="card">
+          <span class="tag">حضوري & أونلاين</span>
+          <h3>مرونة بالحضور</h3>
+          <p class="muted">داخل حي أشبيليا حضوريًا، أو عبر الإنترنت لكل مناطق المملكة.</p>
+        </div>
+      </div>
+    </div><div class="hero-card">
+  <!-- مكان الصورة: استبدل src بالصورة الخاصة بالمدرّسة -->
+  <img class="photo" src="/wa.jpeg" />
+  <div class="mini muted" style="margin-top:10px"><code>src</code> </div>
+</div>
+
+  </main>  <!-- Services -->  <section id="services" class="container">
+    <div class="section-head">
+      <div>
+        <h2>الخدمات التعليمية</h2>
+        <div class="sub">خطط مخصّصة بحسب مستوى كل طالبة/طالب</div>
+      </div>
+    </div>
+    <div class="features grid">
+      <div class="item card">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M12 2 2 7l10 5 10-5-10-5Zm0 9L2 6v11l10 5 10-5V6l-10 5Z" stroke="currentColor" stroke-width="1.4"/></svg>
+        <div>
+          <h3>لغة عربية</h3>
+          <p class="muted">قراءة، فهم مقروء، إملاء، قواعد بأساليب مبسطة وتمارين شيّقة.</p>
+        </div>
+      </div>
+      <div class="item card">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M3 3h18M3 9h18M3 15h18M3 21h18" stroke="currentColor" stroke-width="1.4"/></svg>
+        <div>
+          <h3>رياضيات</h3>
+          <p class="muted">تأسيس العمليات الأربع، الكسور، الهندسة، وحل مسائل بطريقة ممتعة.</p>
+        </div>
+      </div>
+      <div class="item card">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M12 1v22M1 12h22" stroke="currentColor" stroke-width="1.4"/></svg>
+        <div>
+          <h3>تهيئة للاختبارات</h3>
+          <p class="muted">مراجعات مركّزة ونماذج أسئلة وتجارب محاكاة لرفع الثقة.</p>
+        </div>
+      </div>
+    </div>
+  </section>  <!-- About -->  <section id="about" class="container">
+    <div class="section-head">
+      <div>
+        <h2>نبذة عني</h2>
+        <div class="sub">خبرة، صبر، واهتمام بتفاصيل كل طالب/ـة</div>
+      </div>
+    </div>
+    <div class="grid" style="grid-template-columns:1.2fr .8fr;gap:16px">
+      <div class="card">
+        <p>أنا مُدرّسة مختصة بتعليم <strong>اللغة العربية</strong> و<strong>الرياضيات</strong>، أقدم دروس تأسيس وتقوية للمرحلتين الابتدائية والمتوسطة، حضوريًا في <strong>الرياض – حي أشبيليا</strong> أو عن بعد. أؤمن بأن التعليم الممتع يثبت المعلومة ويزرع الثقة.</p>
+        <ul class="mini muted" style="line-height:2;margin:10px 0 0 0">
+          <li>خطة تعلم فردية لكل طالب حسب مستواه.</li>
+          <li>متابعة أسبوعية وتقارير لولي الأمر عند الطلب.</li>
+          <li>مواد وأنشطة تفاعلية وتمارين منزلية مبسطة.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3 style="margin-top:0">الموقع الجغرافي</h3>
+        <iframe class="map" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Ishbiliyyah%20Riyadh&output=embed" title="خريطة حي اشبيليا - الرياض - شارع النجاح - اماممجمع نبراس الطبي"></iframe>
+        <div class="mini muted" style="margin-top:8px">* الدروس الحضورية داخل أشبيليا والمجاورة القريبة.</div>
+      </div>
+    </div>
+  </section>  <!-- Pricing -->  <section id="pricing" class="container">
+    <div class="section-head">
+      <div>
+        <h2>الباقات والأسعار</h2>
+        <div class="sub">أسعار تقديرية — يمكن تخصيص باقة حسب الحاجة</div>
+      </div>
+    </div>
+    <div class="pricing">
+      <div class="price">
+        <div class="tag">حصة تجريبية</div>
+        <div class="amount">مجانية</div>
+        <ul class="muted">
+          <li>⏱️ 20 دقيقة تقييم مستوى</li>
+          <li>📋 توصية خطة دراسة</li>
+          <li>💬 استشارة لولي الأمر</li>
+        </ul>
+      </div>
+      <div class="price" style="outline:2px solid rgba(34,197,94,.25)">
+        <div class="tag">الأكثر طلبًا</div>
+        <div class="amount">120 ر.س / الحصة</div>
+        <ul class="muted">
+          <li>⏱️ 60 دقيقة</li>
+          <li>📚 عربي أو رياضيات</li>
+          <li>🧠 واجبات وتمارين منزلية</li>
+        </ul>
+        <div style="margin-top:12px">
+          <a class="btn whatsapp mini" href="https://wa.me/0575831079?text=أرغب%20بحجز%20حصة" target="_blank" rel="noopener">احجز الآن</a>
+        </div>
+      </div>
+      <div class="price">
+        <div class="tag">باقة شهرية</div>
+        <div class="amount">800 ر.س</div>
+        <ul class="muted">
+          <li>✨ 8 حصص × 60 دقيقة</li>
+          <li>📈 تقرير تقدّم شهري</li>
+          <li>📞 متابعة سريعة عبر واتساب</li>
+        </ul>
+      </div>
+    </div>
+  </section>  <!-- Contact -->  <section id="contact" class="container">
+    <div class="section-head">
+      <div>
+        <h2>الحجز والتواصل</h2>
+        <div class="sub">أرسل رسالة وسأرجع لك في أقرب وقت</div>
+      </div>
+    </div>
+    <div class="contact">
+      <form class="card" onsubmit="event.preventDefault(); alert('تم إرسال رسالتك ✅'); this.reset();">
+        <div class="field">
+          <label class="mini" for="name">الاسم</label>
+          <input class="input" id="name" required placeholder="اسم ولي الأمر أو الطالب" />
+        </div>
+        <div class="field">
+          <label class="mini" for="phone">رقم الجوال</label>
+          <input class="input" id="phone" type="tel" required placeholder="05xxxxxxxx" />
+        </div>
+        <div class="field">
+          <label class="mini" for="msg">الرسالة</label>
+          <textarea id="msg" class="input" placeholder="اكتب مستوى الطالب والمرحلة والوقت المناسب..."></textarea>
+        </div>
+        <button class="btn" style="background:linear-gradient(135deg,var(--brand),var(--brand-2));color:#042f2e">إرسال</button>
+      </form><div class="card">
+    <h3 style="margin-top:0">معلومات التواصل</h3>
+    <ul class="mini" style="list-style:none;padding:0;margin:0;display:grid;gap:8px">
+      <li>📍 الرياض – حي أشبيليا</li>
+      <li>📞 <a href="tel:0575831079">0575831079</a></li>
+      <li>💬 <a href="https://wa.me/0575831079" target="_blank" rel="noopener">واتساب مباشر</a></li>
+      <li>✉️ <a href="mailto:teacher@example.com"></a></li>
+      <li>🕒 الأوقات: 4 مساءً – 9 مساءً (السبت إلى الخميس)</li>
+    </ul>
+    <div style="margin-top:14px">
+      <a class="btn line mini" href="#pricing">اطّلع على الباقات</a>
+    </div>
+  </div>
+</div>
+
+  </section>  <footer>
+    <div class="container footer-grid">
+      <div>
+        <strong>مُدرّسة عربي & رياضيات</strong>
+        <div class="mini">الرياض – حي أشبيليا</div>
+      </div>
+      <div class="mini">© <span id="y"></span> جميع الحقوق محفوظة</div>
+      <div class="mini" style="text-align:start">موقع بسيط وخفيف — صُمّم بمحبة للتعليم 💚</div>
+    </div>
+  </footer>  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script></body>
+</html>
